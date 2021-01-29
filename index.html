@@ -1,227 +1,292 @@
----
-layout: default
----
-<!-- ******HEADER****** -->
-<header id="header" class="header">
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Opineo, Feedback Collection and Polling Widget - Documentation</title>
+<link rel="alternate" type="application/rss+xml" title="egrappler.com" href="feed/index.html">
+<link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet"
+        type="text/css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/prettify.css">
+</head>
+<body data-post="http://www.egrappler.com/free-product-documentation-template/" style="margin-top:45px">
+<nav>
   <div class="container">
-    <h1 class="logo pull-left">
-      <a href="/">
-        <span class="logo-title">{{ site.org_name }}</span>
-      </a>
-    </h1><!--//logo-->
-    <nav id="main-nav" class="main-nav navbar-right" role="navigation">
-      <div class="navbar-header">
-        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button><!--//nav-toggle-->
-      </div><!--//navbar-header-->
-      <div class="navbar-collapse collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Home</a></li>
-          <li class="nav-item"><a class="scrollto" href="#about">About</a></li>
-          <li class="nav-item"><a class="scrollto" href="#join">Join Us</a></li>
-          <li class="nav-item"><a class="scrollto" href="#contact">Contact</a></li>
-          <li class="nav-item last"><a class="scrollto highlight" href="#donate">Donate</a></li>
-        </ul><!--//nav-->
-      </div><!--//navabr-collapse-->
-    </nav><!--//main-nav-->
-  </div>
-</header><!--//header-->
-
-<!-- ******PROMO****** -->
-<section id="promo" class="promo section offset-header">
-  <div class="container text-center">
-    <h2 class="title"><span class="highlight">{{ site.org_name }}</span></h2>
-    <p class="intro">{{ site.org_summary }}</p>
-    <div class="btns">
-      <!--a class="btn btn-cta-secondary" href="#" target="_blank">Demo</a-->
-      <a class="btn btn-outline btn-outline-medium scrollto" href="#about" target="_blank">Learn More <i class="fa fa-angle-double-down"></i></a>
+    <h1>Doc</h1>
+    <div id="menu">
+      <ul class="toplinks">
+        <li><a href="http://www.greepit.com/Opineo/admin-form.html">Opineo Website </a></li>
+        <li><a href="http://www.egrappler.com/">eGrappler</a></li>
+        <li><a href="../doc-template/docs.html">Blue Theme</a></li>
+        <li><a href="../doc-template-red/docs.html">Red Theme</a></li>
+      </ul>
     </div>
-    <ul class="meta list-inline">
-      <li></li>
-    </ul><!--//meta-->
-  </div><!--//container-->
-  <div class="social-media">
-    <div class="info text-center">
-      <ul class="social-icons list-inline">
-        {% if site.twitter_username %}
-        <li><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
-        {% endif %}
-        {% if site.facebook_username %}
-        <li><a href="https://www.facebook.com/{{ site.facebook_username }}" target="_blank"><i class="fa fa-facebook"></i></a></li>
-        {% endif %}
-        {% if site.instagram_username %}
-        <li><a href="http://instagram.com/{{ site.instagram_username }}"><i class="fa fa-instagram"></i></a></li>
-        {% endif %}
-        {% if site.org_general_email_inbox %}
-        <li class="last"><a href="mailto: {{ site.org_general_email_inbox }}"><i class="fa fa-envelope"></i></a></li>
-        {% endif %}
+    <a id="menu-toggle" href="#" class=" ">&#9776;</a> </div>
+</nav>
+<header>
+  <div class="container">
+    <h2 class="docs-header"> Opineo - User Documentation</h2>
+  </div>
+</header>
+<section>
+  <div class="container">
+    <ul class="docs-nav" id="menu-left">
+      <li><strong>Getting Started</strong></li>
+      <li><a href="#welcome" class=" ">Welcome</a></li>
+      <li><a href="#benefits" class=" ">Benefits</a></li>
+      <li><a href="#features" class=" ">Features</a></li>
+      <li><a href="#license" class=" ">License</a></li>
+      <li class="separator"></li>
+      <li><strong>Customizing Opineo</strong></li>
+      <li><a href="#view_type" class=" ">View Type</a></li>
+      <li><a href="#animation_style" class=" ">Animation Styles</a></li>
+      <li><a href="#bars_text" class=" ">Bars Text</a></li>
+      <li><a href="#vote_counter" class=" ">Vote Counter</a></li>
+      <li><a href="#rating_icons" class=" ">Rating Icons</a></li>
+      <li><a href="#rating_titles" class=" ">Rating Titles</a></li>
+      <li><a href="#bar_colors" class=" ">Bar Colors</a></li>
+    </ul>
+    <div class="docs-content">
+      <h2> Getting Started</h2>
+      <h3 id="welcome"> Welcome</h3>
+      <p> Are you listening to your customers?</p>
+      <a href="#" class="btn">Something</a>
+      <p> As they say: You cannot improve what you cannot measure; but the paradox is you
+        cannot measure everything – happiness, hatred, anger… but you can measure customer
+        satisfaction. Yes, you can measure customer satisfaction by analyzing likes and
+        dislikes of your customers. You can gauge popularity of your website or products.
+        You can also:</p>
+      <ul>
+        <li>See how many visitors like the new design of your website or logo</li>
+        <li>Analyze what your readers want to see on your blog</li>
+        <li>Understand how helpful the content on your support forum or website is</li>
+        <li>Know the latest trends and user’s opinion before launching a new product or service</li>
+      </ul>
+      <p> Opineo allows you to do all of this and much more without signing up for an account
+        or hire an expert. This DIY tool enables you to listen to your customers’ voice
+        easily and instantly. All you have to do is go online, design your widget and place
+        it on your website. </p>
+      <h3 id="benefits"> Benefits</h3>
+      <ul>
+        <li>Use Opineo to conduct pre-release surveys before launching new products or services</li>
+        <li>Analyze new trends in the industry</li>
+        <li>Run crowd-sourced campaigns with Opineo to mature new ideas, website designs or
+          logos</li>
+        <li>Conduct popularity surveys with free Opineo widget</li>
+        <li>Create and host polling surveys with Opineo</li>
+      </ul>
+      <h3 id="features"> Features</h3>
+      <ul>
+        <li>Facility to customize to match your website theme</li>
+        <li>Detailed and Compact view options</li>
+        <li>Comprehensive options to customize animation, colors, orientation and style</li>
+        <li>All the power and flexibility of jQuery</li>
+        <li>Easy install; 100% integration</li>
+        <li>Facility to customize rating icons</li>
+      </ul>
+      <h3 id="license"> License</h3>
+      <p> This Feedback Collection and Polling widget is free for personal and commercial
+        projects as long as you are providing a link back to this page. If you don’t want
+        to provide a link back, simply contribute to the development and improvement of
+        this tool. To contribute to this and many other interesting projects, go to Support
+        Efforts and become a patron.</p>
+      <hr>
+      <h2> Customizing Opineo</h2>
+      <p> Before you make any cusomization or even start using Opineo create a 'div' element
+        and assign it some id. Now add references to necessary Javascrip files e.g.</p>
+      <ul>
+        <li>A reference to latest jQuery library </li>
+        <li>A reference to Opineo script file sudo nano opineo.js</li>
+      </ul>
+      <p> The following customization options are available in Opineo:</p>
+      <h3 id="view_type"> View Type</h3>
+      <ul>
+        <li>Detailed View</li>
+      </ul>
+     
+      <pre class="prettyprint">&lt;script&gt;
+      	$(document).ready(function (){
+        $('#DefaultOptions').opineo('results.php', {curvalue:3,
+            view: 'detailed',
+            animation_speed: 'super',
+            show_total_votes_counter: false,
+            show_overall_rating: true});
+         })
+&lt;/script&gt;</pre>
+      <ul>
+        <li>Compact View</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+	$(document).ready(function (){
+	$('#CompactView').opineo('results.php',
+    	    {curvalue:3, view: 'compact',
+    	    animation_speed: 'super'});
+	})
+&lt;/script&gt;</pre>
+      <ul>
+        <li>Mini View</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#MiniView').opineo('results.php', {curvalue:0, view: 'mini', callback: myCallback});
+    })	
+&lt;/script&gt;</pre>
+      <h3 id="animation_style"> Animation Style</h3>
+      <ul>
+        <li>Slow</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', animation_speed:'slow'});
+    })	
+&lt;/script&gt; </pre>
+      <ul>
+        <li>Medium</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', animation_speed:'mild'});
+    })	
+&lt;/script&gt; </pre>
+      <ul>
+        <li>Fast</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', animation_speed:'fast'});
+    })	
+ &lt;/script&gt;</pre>
+      <ul>
+        <li>Super Fast</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', animation_speed:'super'});
+    })	
+&lt;/script&gt;</pre>
+      <ul>
+        <li>Ultra Fast</li>
+      </ul>
+      <pre class="prettyprint"> &lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', animation_speed:'ultra fast'});
+    })	
+&lt;/script&gt; </pre>
+      <h3 id="bars_text"> Bars Text</h3>
+      <ul>
+        <li>Show</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', votes_label:true});
+    })	
+&lt;/script&gt;</pre>
+      <ul>
+        <li>Hide</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', votes_label:false});
+    })	
+ &lt;/script&gt;</pre>
+      <h3 id="vote_counter"> Vote Counter</h3>
+      <ul>
+        <li>Show</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', show_votes_counter:true});
+    })	
+&lt;/script&gt; </pre>
+      <ul>
+        <li>Hide</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', votes_label:false});
+    })	
+&lt;/script&gt;</pre>
+      <h3 id="rating_icons"> Rating Icons</h3>
+      <ul>
+        <li>Colored</li>
+        <li>Grey</li>
+      </ul>
+      <h3 id="rating_titles"> Rating Titles</h3>
+      <ul>
+        <li>Text For First Star</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', star_1_text:'Hate It'});
+    })	
+&lt;/script&gt;</pre>
+      <ul>
+        <li>Text For Second Star</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', star_2_text:'Don't Like It'});
+    })	
+&lt;/script&gt; </pre>
+      <ul>
+        <li>Text For Third Star</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', star_1_text:'Its OK'});
+    })	
+&lt;/script&gt;</pre>
+      <ul>
+        <li>Text For Fourth Star</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', star_1_text:'Like It'});
+    })	
+&lt;/script&gt;</pre>
+      <ul>
+        <li>Text For Fifth Star</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', star_1_text:'Love It'});
+    })	
+&lt;/script&gt;</pre>
+      <h3 id="bar_colors"> Bar Colors</h3>
+      <ul>
+        <li>Colors of Red Bar</li>
+        <li>Colors of Yellow Bar</li>
+        <li>Colors of Green Bar</li>
       </ul>
     </div>
   </div>
-</section><!--//promo-->
-
-<!-- ******ABOUT****** -->
-<section id="about" class="about section">
+</section>
+<section class="vibrant centered">
   <div class="container">
-    <h2 class="title text-center">About Us</h2>
-    <p class="intro text-center">{{ site.org_full_description }}</p>
-  </div><!--//container-->
-</section><!--//about-->
-
-<!-- ******JOIN****** -->
-<section id="join" class="join section">
-  <div class="container text-center">
-    <h2 class="title">Join Us</h2>
-    <div class="row">
-      <div class="col-sm-5 col-sm-offset-1 text-right text-right-sm">
-        <h1 class="join-us-intro">We Need Your Voice.<br> Join Us!</h1>
-      </div>
-      <div class="col-sm-5 text-left text-left-sm">
-        <p>Sign up to receive updates, progress reports and ways to get involved. We're excited to have you join our amazing community!</p>
-        {% if site.tinyletter_username %}
-        <p><em>No spam. Just the occasional update.</em></p>
-        <div class="row">
-          <div class="col-sm-12">
-            <form class="form-inline" role="form" action="https://tinyletter.com/{{ site.tinyletter_username }}" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/{{ site.tinyletter_username }}', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-              <div class="input-group input-group-lg col-sm-12">
-                <label class="sr-only" for="tlemail">Email address</label>
-                <input type="email" class="form-control" name="email" id="tlemail" placeholder="email address" />
-                <div class="input-group-btn">
-                  <button type="submit" class="button btn btn-cta-secondary">Join Us!</button>
-                </div><!-- /btn-group -->
-              </div><!-- /input-group -->
-            </form>
-          </div>
-        </div>
-        {% elsif site.mailchimp_embed_code %}
-        <p><em>No spam. Just the occasional update.</em></p>
-        <div id="mc_embed_signup">
-          <form action="{{ site.mailchimp_embed_code }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate bs-component" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
-              <div class="form-group">
-                <label for="mce-EMAIL" class="sr-only">Email Address</label>
-                <input placeholder="email address" type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL">
-              </div>
-              <div class="form-group">
-                <div class="row">
-                  <div class="col-xs-6">
-                    <label for="mce-FNAME" class="sr-only">Given / First Name </label>
-                    <input placeholder="given / first name" type="text" value="" name="FNAME" class="form-control" id="mce-FNAME">
-                  </div>
-                  <div class="col-xs-6">
-                    <label for="mce-LNAME" class="sr-only">Family / Last Name </label>
-                    <input placeholder="family / last name" type="text" value="" name="LNAME" class="form-control" id="mce-LNAME">
-                  </div>
-                </div>
-              </div>
-              <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-              </div>
-              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;"><input type="text" name="{{ site.mailchimp_spam_guard }}" tabindex="-1" value=""></div>
-              <div class="clear">
-
-                <input type="submit" value="Join Us!" name="subscribe" id="mc-embedded-subscribe" class="button btn-success btn-block btn" />
-              </div>
-            </div>
-          </form>
-        </div>
-        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-        <!--End mc_embed_signup-->
-        {% else %}
-        <p><em>Sorry, email signup is not available at this time <i class="fa fa-frown-o"></i></em></p>
-        {% endif %}
-
-        <!--form style="padding:3px;text-align:center;" action="https://tinyletter.com/{{ site.tinyletter_username }}" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/{{ site.tinyletter_username }}', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">Subscribe to Updates</label></p><p><input type="text" style="width:140px" name="email" id="tlemail" data-behavior="placeholder" placeholder="Email Address" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" /><p></p></form-->
-
-
-      </div>
-    </div>
-  </div><!--//container-->
-</section><!--//join-->
-
-<!-- ******DONATE****** -->
-<section id="donate" class="donate section text-center">
+    <h4> This documentation template is provided free by eGrappler.com. Opineo is a feedback
+      collection widget and is available for free download <a href="http://www.greepit.com/Opineo/admin-form.html"> here</a></h4>
+  </div>
+</section>
+<footer>
   <div class="container">
-    <div class="donate-inner">
-      <h2 class="title text-center">Donate</h2>
-      <div class="info">
-        <p><strong>Become a donor today.</strong><br>As a small grassroots organization, know that every dollar will have an immense impact on our ability to continue working towards our mission.</p>
-        {% if site.donorbox_campaign_name %}
-          <div class="donorbox text-center">
-            <iframe src="https://donorbox.org/embed/{{ site.donorbox_campaign_name }}" height="600px" width="100%" style="max-width:500px; min-width:310px" seamless="seamless" name="donorbox" frameborder="0" scrolling="no"></iframe>
-          </div>
-          {% if site.501c3 == true %}
-            <p>Contributions are tax deductible to the extent permitted by law.<br>{{ site.org_name }} is a 501(c)(3) organization.</p>
-          {% elsif site.fiscal_sponsor_name %}
-            <p>{{ site.org_name }} is fiscally sponsored by {{ site.fiscal_sponsor_name }}, a 501 (c)(3) tax exempt non-profit organization.</p>
-          {% endif %}
-        {% else %}
-        <div class="donorbox text-center">
-        </div>
-        <hr>
-        <p class="text-warning">Sorry, online donations are not available at this time <i class="fa fa-frown-o"></i></p>
-        <hr>
-        {% endif %}
-      </div><!--//info-->
-      <div class="cta-container">
-        <div class="speech-bubble">
-          <p class="intro">Your support means the world to us :)</p>
-          <div class="icon-holder  text-center"><i class="fa fa-smile-o"></i></div>
-        </div><!--//speech-bubble-->
-        <div class="btn-container  text-center">
-          <!--//You need to generate your own PayPal button if you choose to use Paypal - https://www.paypal.com/us/cgi-bin/?cmd=_donate-intro-outside -->
-          <!--PayPal generated code starts-->
-              <!--form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-              <input type="hidden" name="cmd" value="_s-xclick">
-              <input type="hidden" name="hosted_button_id" value="{{ site.paypal_button_id }}">
-              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-              <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-            </form-->
-            <!--//PayPal generated code ends-->
+    <p> &copy; 2014 EGrappler.com </p>
+  </div>
+</footer>
+<script src="js/jquery.min.js"></script> 
+ 
+<script type="text/javascript" src="js/prettify/prettify.js"></script> 
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+<script src="js/layout.js"></script>
+ <script src="js/jquery.localscroll-1.2.7.js" type="text/javascript"></script>
+ <script src="js/jquery.scrollTo-1.4.3.1.js" type="text/javascript"></script>
+   <script type="text/javascript" src="../../wp-content/themes/piha/js/top-bar-l1.js" ></script>
+  <script type="text/javascript" src="../../wp-content/themes/piha/js/bsa-ads-l1.js" ></script>
+  <!--Dynamically creates analytics markup-->
+  <?php include("http://www.egrappler.com/analytics.php");?>
 
-        </div><!--//btn-container-->
-      </div><!--//cta-container-->
-    </div><!--//donate-inner-->
-  </div><!--//container-->
-</section><!--//how-->
-
-<!-- ******CONTACT****** -->
-<section id="contact" class="contact section has-pattern">
-  <div class="container">
-    <div class="contact-inner">
-      <h2 class="title  text-center">Contact</h2>
-      <address class="text-center">
-        <strong>{{ site.org_name }}</strong><br>
-        {% if site.org_street_address %}{{ site.org_street_address }},&nbsp;{% endif %}{% if site.org_address_suite %}{{ site.org_address_suite }}<br>{% endif %}
-        {% if site.org_city %}{{ site.org_city }},&nbsp;{% endif %}{% if site.org_state %}{{ site.org_state }}&nbsp;{% endif %}{% if site.org_zip %}{{ site.org_zip }}{% endif %}<br>
-        {% if site.org_phone %}
-        <abbr title="Phone">P:</abbr> {{ site.org_phone }}
-        {% endif %}
-      </address>
-      <div class="clearfix"></div>
-      <div class="info text-center">
-        <h4 class="sub-title">Get Connected</h4>
-        <ul class="social-icons list-inline">
-        {% if site.twitter_username %}
-        <li><a href="https://twitter.com/{{ site.org_twitter_username }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
-        {% endif %}
-        {% if site.facebook_username %}
-        <li><a href="https://www.facebook.com/{{ site.org_facebook_username }}" target="_blank"><i class="fa fa-facebook"></i></a></li>
-        {% endif %}
-        {% if site.instagram_username %}
-        <li><a href="http://instagram.com/{{ site.org_instagram_username }}"><i class="fa fa-instagram"></i></a></li>
-        {% endif %}
-        {% if site.org_general_email_inbox %}
-        <li class="last"><a href="mailto: {{ site.org_general_email_inbox }}"><i class="fa fa-envelope"></i></a></li>
-        {% endif %}
-      </ul>
-      </div><!--//info-->
-    </div><!--//contact-inner-->
-  </div><!--//container-->
-</section><!--//contact-->
+</body>
+</html>
